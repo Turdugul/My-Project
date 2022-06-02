@@ -1,7 +1,7 @@
 package com.example.myproject.di
 
-import androidx.viewbinding.BuildConfig
-import com.example.myproject.data.network.UserApi
+import com.example.myproject.BuildConfig
+import com.example.myproject.data.network.InformationApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,45 +14,45 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
-@Module
-@InstallIn(SingletonComponent::class)
-class NetworkModule {
 
-    @Provides
-    fun provideUserApi(retrofit: Retrofit): UserApi = retrofit.create(UserApi::class.java)
+    @Module
+    @InstallIn(SingletonComponent::class)
+    class NetworkModule {
 
-    @Provides
-    @Singleton
-    fun provideOkHttpClient(): OkHttpClient = createOkHttpClientBuilder().build()
+        @Provides
+        fun provideUserApi(retrofit: Retrofit): InformationApi = retrofit.create(InformationApi::class.java)
 
-    @Provides
-    @Singleton
-    fun provideRetrofit(okhttpClient: OkHttpClient): Retrofit = createRetrofit(okhttpClient)
+        @Provides
+        @Singleton
+        fun provideOkHttpClient(): OkHttpClient = createOkHttpClientBuilder().build()
 
-    private fun createOkHttpClientBuilder(): OkHttpClient.Builder {
-        val interceptor = HttpLoggingInterceptor()
-            .apply {
-                level = HttpLoggingInterceptor.Level.BODY
-            }
+        @Provides
+        @Singleton
+        fun provideRetrofit(okhttpClient: OkHttpClient): Retrofit = createRetrofit(okhttpClient)
 
-        return OkHttpClient.Builder()
-            .apply {
-                connectTimeout(2, TimeUnit.MINUTES)
-                writeTimeout(2, TimeUnit.MINUTES)
-                readTimeout(2, TimeUnit.MINUTES)
-                if (BuildConfig.DEBUG) {
-                    addInterceptor(interceptor)
+        private fun createOkHttpClientBuilder(): OkHttpClient.Builder {
+            val interceptor = HttpLoggingInterceptor()
+                .apply {
+                    level = HttpLoggingInterceptor.Level.BODY
                 }
-            }
-    }
 
-    private fun createRetrofit(httpClient: OkHttpClient): Retrofit {
-        return Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .client(httpClient)
-            .build()
-    }
+            return OkHttpClient.Builder()
+                .apply {
+                    connectTimeout(2, TimeUnit.MINUTES)
+                    writeTimeout(2, TimeUnit.MINUTES)
+                    readTimeout(2, TimeUnit.MINUTES)
+                    if (BuildConfig.DEBUG) {
+                        addInterceptor(interceptor)
+                    }
+                }
+        }
 
-}
+        private fun createRetrofit(httpClient: OkHttpClient): Retrofit {
+            return Retrofit.Builder()
+                .baseUrl(BuildConfig. BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(httpClient)
+                .build()
+        }
+    }
