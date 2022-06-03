@@ -11,7 +11,9 @@ fun InformationDto.toInformationEntity(): InformationEntity {
         image = this.image,
         info1 = this.info1,
         info2 = this.info2,
-        advices = this.advices
+        info3 = this.info3,
+        advices1 = this.advices1,
+        advices2 = this.advices2
     )
 }
 

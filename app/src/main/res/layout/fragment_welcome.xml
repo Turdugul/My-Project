@@ -11,8 +11,7 @@
         android:id="@+id/imgLogin"
         android:layout_width="350dp"
         android:layout_height="300dp"
-        android:src="@drawable/p888"
-        android:paddingBottom="15dp"
+        android:src="@drawable/p22"
        />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -26,7 +25,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnGet1"
         style="@style/BaseButton"
-        android:background="@color/bgbt_color"
+        android:background="@drawable/roundedbutton"
         android:text="@string/get_started" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

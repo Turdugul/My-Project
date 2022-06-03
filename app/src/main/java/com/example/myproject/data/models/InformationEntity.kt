@@ -15,5 +15,7 @@ data class InformationEntity(
     var image: String? = null,
     var info1: String? = null,
     var info2: String? = null,
-    var advices: String? = null
+    var info3: String? = null,
+    var advices1: String? = null,
+    var advices2: String? = null
 )

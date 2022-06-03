@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txtWeek"
@@ -39,9 +43,33 @@
         android:layout_margin="10dp"
         android:padding="3dp"
         />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtInfo3"
+        style="@style/BaseTxt"
+        android:background="@color/bg_color"
+        android:text="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#131212"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+        />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtAdvice"
+        android:id="@+id/txtAdvice1"
+        style="@style/BaseTxt"
+        android:background="@color/bg_color"
+        android:text="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#131212"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAdvice2"
         style="@style/BaseTxt"
         android:background="@color/bg_color"
         android:text="3"
@@ -53,3 +81,4 @@
         android:padding="3dp"
         />
 </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

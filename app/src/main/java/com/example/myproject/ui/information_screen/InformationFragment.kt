@@ -40,7 +40,9 @@ class InformationFragment : BaseFragment<InformationViewModel, FragmentInformati
         binding.txtWeek.text = it.weeks
         binding.txtInfo1.text = it.info1
         binding.txtInfo2.text = it.info2
-        binding.txtAdvice.text = it.advices
+        binding.txtInfo3.text = it.info3
+        binding.txtAdvice1.text = it.advices1
+        binding.txtAdvice2.text = it.advices2
     }
 
 
