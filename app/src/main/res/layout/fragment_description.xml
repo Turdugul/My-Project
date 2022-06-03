@@ -5,14 +5,23 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:src="@drawable/week1"
+        android:paddingBottom="20dp"
+        />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txtDesc"
         style="@style/BaseTxt"
-        android:text="@string/welcome" />
+        android:text="@string/weeks"
+        android:paddingBottom="25dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnDesc"
-        android:background="@color/teal_200"
+        android:background="@color/bgbt_color"
         style="@style/BaseButton"
         android:text="@string/get_started" />
 </androidx.appcompat.widget.LinearLayoutCompat>

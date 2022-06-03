@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">My Project</string>
-    <string name="welcome">Welcome to Pregnancy week by week</string>
-    <string name="get_started">Get Started</string>
+    <string name="app_name">Кош бойлуулук жума сайын</string>
+    <string name="welcome">Кош бойлуулук жума сайын тиркемесине кош келиңиз!</string>
+    <string name="weeks">Кош бойлуулуктун жумалары</string>
+    <string name="get_started">Баштадык</string>
 </resources>
