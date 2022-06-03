@@ -9,7 +9,7 @@ fun InformationDto.toInformationEntity(): InformationEntity {
         objectId = this.objectId,
         weeks = this.weeks,
         image = this.image,
-        info = this.info,
+        info1 = this.info1,
         info2 = this.info2,
         advices = this.advices
     )
