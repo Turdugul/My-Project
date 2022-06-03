@@ -37,7 +37,7 @@ class InformationFragment : BaseFragment<InformationViewModel, FragmentInformati
     }
 
     private fun fillInformation(it: InformationEntity) {
-        binding.txtInfo.text = it.info1
+        binding.txtInfo.text = it.info
     }
 
 

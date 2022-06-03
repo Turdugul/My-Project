@@ -8,7 +8,7 @@ data class InformationDto(
     var objectId: String,
     var weeks: String? = null,
     var image: String? = null,
-    var info1: String? = null,
+    var info: String? = null,
     var info2: String? = null,
     var advices: String? = null
 )

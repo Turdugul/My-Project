@@ -30,7 +30,7 @@ class MainFragment : BaseFragment<MainViewModel, FragmentMainBinding>(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+//        viewModel.getAllBooks()
         subscribeToLiveData()
         setUpViews()
     }
@@ -44,9 +44,7 @@ class MainFragment : BaseFragment<MainViewModel, FragmentMainBinding>(
         recycler.layoutManager = LinearLayoutManager(requireContext())
         recycler.addItemDecoration(DividerItemDecoration(requireContext(), RecyclerView.VERTICAL))
 
-
     }
-
 
     private fun subscribeToLiveData() {
         viewModel.weeksLiveData.observe(viewLifecycleOwner) {

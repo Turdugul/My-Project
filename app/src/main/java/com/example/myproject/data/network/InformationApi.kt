@@ -12,3 +12,4 @@ interface InformationApi {
     @GET("api/data/myproject/{objectId}")
     fun getInfoById(@Path("objectId") objectId: String): Single<InformationDto>
 }
+

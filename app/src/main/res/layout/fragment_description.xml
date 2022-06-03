@@ -12,6 +12,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnDesc"
+        android:background="@color/teal_200"
         style="@style/BaseButton"
         android:text="@string/get_started" />
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -7,7 +7,7 @@ import com.example.myproject.R
 import com.example.myproject.data.models.InformationEntity
 import com.example.myproject.databinding.ItemRecyclerBinding
 
-class Adapter(private val click: (info: InformationEntity) -> Unit) :
+class Adapter (private val click: (info: InformationEntity) -> Unit) :
     RecyclerView.Adapter<Adapter.ViewHolder>() {
     var list = listOf<InformationEntity>()
     var completeList = mutableListOf<InformationEntity>()
@@ -50,14 +50,14 @@ class Adapter(private val click: (info: InformationEntity) -> Unit) :
         private val binding: ItemRecyclerBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(info1: InformationEntity) {
+        fun bind(info: InformationEntity) {
             with(binding){
 
-                itemWeek.text = info1.weeks
+                itemWeek.text = info.weeks
             }
 
             itemView.setOnClickListener {
-                click.invoke(info1)
+                click.invoke(info)
             }
         }
     }

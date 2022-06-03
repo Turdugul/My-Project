@@ -7,7 +7,7 @@
     android:gravity="center"
     android:padding="20dp"
     android:layout_margin="20dp"
-    android:background="@drawable/pr">
+    android:background="@drawable/rectangle">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/itemWeek"
