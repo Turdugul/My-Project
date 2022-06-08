@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:textColor="#131212"
+        android:textColor="@color/black"
         android:layout_margin="10dp"
         />
     <androidx.appcompat.widget.AppCompatTextView
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:textColor="#131212"
+        android:textColor="@color/black"
         android:layout_margin="10dp"
         android:padding="3dp"
         />
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:textColor="#131212"
+        android:textColor="@color/black"
         android:layout_margin="10dp"
         android:padding="3dp"
         />
@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:textColor="#131212"
+        android:textColor="@color/black"
         android:layout_margin="10dp"
         android:padding="3dp"
         />
@@ -76,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:textColor="#131212"
+        android:textColor="@color/black"
         android:layout_margin="10dp"
         android:padding="3dp"
         />
