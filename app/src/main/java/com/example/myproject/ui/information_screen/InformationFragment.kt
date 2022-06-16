@@ -2,6 +2,7 @@ package com.example.myproject.ui.information_screen
 
 import android.os.Bundle
 import android.view.View
+import com.bumptech.glide.Glide
 import com.example.myproject.Event
 import com.example.myproject.data.models.InformationEntity
 import com.example.myproject.databinding.FragmentInformationBinding
@@ -37,6 +38,10 @@ class InformationFragment : BaseFragment<InformationViewModel, FragmentInformati
     }
 
     private fun fillInformation(it: InformationEntity) {
+
+        Glide.with(requireContext())
+            .load(it.image)
+            .into(binding.imgWeek)
         binding.txtWeek.text = it.weeks
         binding.txtInfo1.text = it.info1
         binding.txtInfo2.text = it.info2

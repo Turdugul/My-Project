@@ -3,6 +3,7 @@ package com.example.myproject.ui.main_screen
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.myproject.R
 import com.example.myproject.data.models.InformationEntity
 import com.example.myproject.databinding.ItemRecyclerBinding
@@ -52,6 +53,10 @@ class Adapter (private val click: (info: InformationEntity) -> Unit) :
 
         fun bind(info: InformationEntity) {
             with(binding){
+
+                Glide.with(itemView.context)
+                    .load(info.image)
+                    .into(imgWeek)
 
                 itemWeek.text = info.weeks
             }

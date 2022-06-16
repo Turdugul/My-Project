@@ -16,7 +16,7 @@ import javax.inject.Singleton
 class StorageModule {
 
     @Provides
-    fun provideUserDao(appDatabase: AppDatabase) = appDatabase.booksDao()
+    fun provideUserDao(appDatabase: AppDatabase) = appDatabase.weeksDao()
 
     @Provides
     @Singleton
