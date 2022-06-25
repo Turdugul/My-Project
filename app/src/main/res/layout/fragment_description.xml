@@ -23,5 +23,5 @@
         android:id="@+id/btnDesc"
         android:background="@color/bgbt_color"
         style="@style/BaseButton"
-        android:text="@string/get_started" />
+        android:text="@string/start" />
 </androidx.appcompat.widget.LinearLayoutCompat>

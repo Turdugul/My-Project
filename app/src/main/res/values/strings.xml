@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Кош бойлуулук жума сайын</string>
-    <string name="welcome">Кош бойлуулук жума сайын тиркемесине кош келиңиз!</string>
+    <string name="welcome">Кош бойлуулук жума сайын тиркемеси</string>
     <string name="weeks">Кош бойлуулуктун жумалары</string>
-    <string name="get_started">Баштадык</string>
+    <string name="get_started">Кош келиңиз!</string>
+    <string name="start">Баштадык</string>
 </resources>
